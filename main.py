@@ -49,7 +49,7 @@ async def _(event):
         for root, _, files in os.walk('./downloads'):
             for file in files:
                f = os.path.join(root, file)
-               f = f.replace('./downloads', '')
+               f = f.replace('./downloads/', '')
                await encode(event.chat_id, f, cmd)
         delete_files('./downloads')
         
