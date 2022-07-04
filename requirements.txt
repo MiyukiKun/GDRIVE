@@ -1,0 +1,5 @@
+telethon
+https://github.com/MiyukiKun/FastTelethonhelper/archive/main.zip
+telethon-tgcrypto
+requests
+libtorrent
