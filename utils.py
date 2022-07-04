@@ -30,8 +30,6 @@ async def encode(chat, file, cmd):
     x = await msg.reply(o[-2000:]) 
     res_file = await fast_upload(client = bot, file_location = f"./downloads/[AG] {file}", reply = msg)
     await msg.delete()
-    os.remove(f"./downloads/{file}")
-    os.remove(f"./downloads/[AG] {file}")
     try:
         y = await bot.send_message(DESTINATION,f"./downloads/[AG] {file}", file=res_file, force_document=True)
     except:
